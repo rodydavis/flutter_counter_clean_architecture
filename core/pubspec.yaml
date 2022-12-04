@@ -1,0 +1,33 @@
+name: counter_core
+description: Data/Domain layers of the counter application
+version: 0.0.1
+publish_to: "none"
+
+environment:
+  sdk: ">=2.19.0-364.0.dev <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file: ^6.1.4
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.7.0
+  riverpod: ^2.1.1
+  riverpod_annotation: ^1.0.6
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.2
+  json_serializable: ^6.5.4
+  freezed: ^2.3.0
+  riverpod_generator: ^1.0.6
+
+flutter:
+
+scripts:
+  dev: flutter pub run build_runner watch
+  test: flutter test lib/**/*_test.dart

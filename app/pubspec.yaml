@@ -1,0 +1,28 @@
+name: counter_app
+description: Flutter renderer for the counter app
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0-364.0.dev <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  file: ^6.1.4
+  riverpod: ^2.1.1
+  riverpod_annotation: ^1.0.6
+  counter_core:
+    path: ../core
+  flutter_riverpod: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.2
+  riverpod_generator: ^1.0.6
+
+flutter:
+  uses-material-design: true
